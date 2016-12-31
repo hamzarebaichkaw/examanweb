@@ -1,0 +1,15 @@
+{{ form(f) }}
+<table border="1">
+    <tr>
+        <td>Nom et prenom</td>
+        <td>Destination</td>
+        <td>Nombre de place</td>
+    </tr>
+    {%  for i in rs %}
+        <tr>
+            <td>{{ i.nomPrenom }}</td>
+            <td>{{ i.idOffre.destination }}</td>
+            <td>{{ i.nbrPlace }}</td>
+        </tr>
+    {%  endfor %}
+</table>

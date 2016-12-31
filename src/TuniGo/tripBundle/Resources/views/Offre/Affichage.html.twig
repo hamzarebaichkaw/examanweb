@@ -1,0 +1,31 @@
+<h2>Liste des offres</h2>
+<table border="1">
+    <tr>
+        <th>
+            Destination
+        </th>
+        <th>
+            dateAller
+
+        </th>
+        <th>
+            dateretour
+        </th>
+        <th>
+            prix
+        </th>
+        <th>
+            companie
+        </th>
+    </tr>
+    {% for i in offre %}
+        <tr>
+            <td>{{ i.destination }}</td>
+            <td>{{ i.dateAller|date }}</td>
+            <td>{{ i.dateRetour|date }}</td>
+            <td>{{ i.prix }}</td>
+            <td>{{ i.companie }}</td>
+        </tr>
+    {% endfor %}
+
+</table>

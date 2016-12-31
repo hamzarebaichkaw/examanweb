@@ -1,0 +1,13 @@
+<h1>Liste des offres</h1>
+<ul>
+    {% for i in offre %}
+        <li>Destination :{{ i.destination }}</li>
+        <li>Date d'Aller : {{ i.dateAller|date('Y/m/d') }}</li>
+        <li>Date de retour:      {{ i.dateRetour|date('Y/m/d')}}</li>
+        <li>Prix:{{ i.prix }}</li>
+        <li>Compagnie : {{ i.companie }}</li>
+        <a href="{{ path('resevation',{id:i.id}) }}">Reserver ici</a>
+        <br>
+        *********************************************
+    {%  endfor %}
+</ul>

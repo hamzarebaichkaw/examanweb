@@ -1,0 +1,21 @@
+tuni_gotrip_homepage:
+    path:     /
+    defaults: { _controller: TuniGotripBundle:Default:index }
+AjoutOffre:
+    path:     /AjoutOffre
+    defaults: { _controller: TuniGotripBundle:Offre:AjoutOffre }
+AffichageOffre:
+    path:     /AffichageOffre
+    defaults: { _controller: TuniGotripBundle:Offre:AffichageOffre }
+ListOffre:
+    path:     /ListOffre
+    defaults: { _controller: TuniGotripBundle:Offre:ListeOffre }
+resevation:
+    path:     /reserver/{id}
+    defaults: { _controller: TuniGotripBundle:Reservation:reserver }
+recherche:
+    path:     /recherche
+    defaults: { _controller: TuniGotripBundle:Reservation:rechercheReservation }
+facture:
+    path:     /facture
+    defaults: { _controller: TuniGotripBundle:Reservation:reserver }
